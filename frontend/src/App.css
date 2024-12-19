@@ -1,7 +1,7 @@
-/* General Styling */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  font-family: sans-serif;
+  background-color: hsl(0, 0%, 2%);
   margin: 0;
   padding: 0;
 }
@@ -10,35 +10,39 @@ body {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.395);
+  box-shadow: 0px 0px 50px #09dfb4;
+  border-radius: 20px;
+  margin-top: 80px;
 }
 
 .title {
   text-align: center;
   color: #333;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  text-shadow: 0px 5px 10px #09dfb4;
 }
 
-/* Form Styling */
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  
 }
 
 .textarea {
-  width: 100%;
-  padding: 10px;
+  width: 95%;
+  padding: 5px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   resize: vertical;
   font-size: 1rem;
   margin-bottom: 15px;
+  background-color: #fbfbfb;
   min-height: 150px;
 }
 
@@ -50,16 +54,19 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  background-color: #0e9c80;
+  color: white;
 }
 
 .submit-button:hover {
-  background-color: #45a049;
+  background-color: #48dbbe;
 }
 
-/* Entries List Styling */
+
 .entries-list {
   list-style: none;
   padding: 0;
+  
 }
 
 .entry-item {
@@ -67,24 +74,30 @@ body {
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 8px;
+  background-color: #0e9c80;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid #08d2a9;
 }
-
+.entry-item:hover{
+  background-color: #43ceb2;
+}
 .entry-content {
   font-size: 1.1rem;
-  color: #333;
+  color: white;
   margin-bottom: 5px;
 }
 
 .entry-sentiment {
   font-size: 0.9rem;
-  color: #888;
+  color: white;
   margin-bottom: 15px;
 }
 
 .button-container {
   display: flex;
   justify-content: space-between;
+  color: #fff;
+  
 }
 
 .edit-button, .delete-button {
@@ -96,19 +109,22 @@ body {
 }
 
 .edit-button {
-  background-color: #FF9800;
+  background-color: #edeae5;
   color: white;
+  background-color: #333;
 }
 
 .delete-button {
-  background-color: #F44336;
+  background-color: #333;
   color: white;
 }
 
 .edit-button:hover {
-  background-color: #fb8c00;
+  background-color: white;
+  color: black;
 }
 
 .delete-button:hover {
-  background-color: #e53935;
+  background-color: white;
+  color: black;
 }

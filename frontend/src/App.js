@@ -40,7 +40,7 @@ const JournalApp = () => {
 
     return (
         <div className="container">
-            <h1 className="title">AI-Powered Journal</h1>
+            <h1 className="title">AI-Powered Journal with Mood Analysis</h1>
             <form onSubmit={handleSubmit} className="form">
                 <textarea
                     className="textarea"
