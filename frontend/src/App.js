@@ -16,7 +16,7 @@ const JournalApp = () => {
         fetchEntries();
     }, []);
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {c
         e.preventDefault();
         if (editingId) {
             await axios.put(`http://localhost:5000/entries/${editingId}`, { content });
@@ -55,6 +55,7 @@ const JournalApp = () => {
                 {entries.map((entry) => (
                     <li key={entry.id} className="entry-item">
                         <p className="entry-content">{entry.content}</p>
+                        <p className="entry-date">Date: {new Date(entry.created_at).toLocaleString()}</p>
                         <p className="entry-sentiment">Sentiment: {entry.sentiment}</p>
                         <div className="button-container">
                             <button onClick={() => handleEdit(entry)} className="edit-button">Edit</button>
@@ -68,3 +69,6 @@ const JournalApp = () => {
 };
 
 export default JournalApp;
+
+
+
